@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "airbnb-base",
+    "sonar",
+    "eslint:recommended",
+    "plugin:security/recommended",
+    "plugin:promise/recommended",
+    "plugin:lodash/recommended"
+  ],
+  "plugins": [
+    "smells",
+    "security",
+    "promise",
+    "lodash"
+  ],
+  "rules": {
+    "filenames/match-exported": 0,
+    "security/detect-object-injection": 0,
+    "promise/no-callback-in-promise": 0,
+    "no-underscore-dangle": 0
+  },
+  "env": {
+    "node":true
+  }
+}
