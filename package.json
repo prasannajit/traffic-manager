@@ -15,7 +15,9 @@
   "keywords": [
     "trafficmanager",
     "middleware",
-    "express-middleware"
+    "express middleware to split traffic",
+    "split traffic",
+    "traffic splitter"
   ],
   "author": "Prasannajit Tripathy",
   "license": "MIT",
