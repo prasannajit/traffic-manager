@@ -1,6 +1,6 @@
 {
   "name": "traffic-manager",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "express middleware to split traffic by adding cookies and updating headers",
   "main": "index.js",
   "scripts": {
