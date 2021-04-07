@@ -42,6 +42,9 @@ Accepts a boolean.
 true: traffic manager is enabled and drops variant cookies and adds new headers.
 false: traffic manager is disabled and removes variant cookies. 
 
+To clear variant cookies;
+trafficManager({enabled: false})
+
 #### cookieName
 This the name of the cookie that would be dropped. A header with the same name is added to req.headers.
 
