@@ -14,6 +14,7 @@ const trafficManager = require('traffic-manager');
 ### traficManager(configuration)
 If configuration is not passed default config is used.
 The default config is;
+```javascript 
 {
     enabled: true,
     cookieName: 'variant',
@@ -30,7 +31,7 @@ The default config is;
       maxAge: 86400000,
     },
 }
-
+```
 ### configuration
 `traffic-manager` accepts these properties in the configuration object.
 
