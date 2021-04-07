@@ -46,14 +46,13 @@ This the name of the cookie that would be dropped. A header with the same name i
 If maxUsers is 100 and split ratio is 50:50; Then for first 100 incoming requests, randomly 50 requests would receive variantA cookie and the other 50 requests
 would receive variantB cookie. For next 100 users, it again randomly splits the incoming traffic.
 
-####
+#### ratio
 ratio is an array of objects.
 
 name: the cookie value 
 percentage: percentage of requests that would receive this cookie
 
-####
-cookieAttributes
+#### cookieAttributes
 These are cookie attributes and directly passed to res.cookie() method.
   
   
