@@ -4,7 +4,7 @@ This is used as an express middleware.
 
 **It is dependent on cookie-parser middleware. 
 Use cookie-parser middleware before adding this middleware.
- (to detect if variant cookie is present or not. Based on that it decides to add cookie or delete cookie).**
+ (cookie parser middleware is used to check if variant cookie is present or not).**
 
 If this middleware is enabled, it adds variant cookies to each incoming request and to headers which can be later used to identify which variant the user is,
 and can be used to serve a different page.
