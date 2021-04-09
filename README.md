@@ -2,10 +2,11 @@
 This is a nodejs module available through the npm registry. Installation is done using npm install command.
 This is used as an express middleware.
 **It is dependent on cookie-parser middleware (to detect if variant cookie is present or not. Based on that it decides to add cookie or delete cookie).**
+
 If this middleware is enabled, it adds variant cookies to each incoming request and to headers which can be later used to identify which variant the user is,
 and can be used to serve a different page.
 This cookie can be used to split the traffic at load balancer as well.
-When added to headers, this helps to make a decision in downstream micro services.
+When added to headers, it helps to take a decision in downstream micro services.
 
 ## Installation
 $npm install traffic-manager
@@ -36,7 +37,21 @@ The default config is;
 ```
 ### configuration
 `traffic-manager` accepts these properties in the configuration object.
-
+Any property can be overridden, by passing an object with the overridden properties.
+e.g.
+```javascript 
+trafficManager({
+  enabled: true,
+  cookieName: 'template',
+  splitTraffic: {
+      ratio: [
+        { name: 'templateA', percentage: 30 },
+        { name: 'templateB', percentage: 20 },
+        { name: 'templateB', percentage: 50 },
+      ],
+    },
+})
+```
 #### enabled
 Accepts a boolean.
 true: traffic manager is enabled and drops variant cookies and adds new headers.
