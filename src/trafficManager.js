@@ -41,10 +41,9 @@ function trafficManagerInit(splitConfig) {
       cookieAttributes,
     } = abTestingConfig;
     const existingCookieValue = cookies[cookieName];
-
+    req.headers = { ...headers, cookieName: cookieValue };
     if (!existingCookieValue) {
       res.cookie(cookieName, cookieValue, cookieAttributes);
-      req.headers = { ...headers, cookieName: cookieValue };
     }
   };
 
