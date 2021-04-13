@@ -50,7 +50,7 @@ trafficManager({
       ratio: [
         { name: 'templateA', percentage: 30 },
         { name: 'templateB', percentage: 20 },
-        { name: 'templateB', percentage: 50 },
+        { name: 'templateC', percentage: 50 },
       ],
     },
 })
